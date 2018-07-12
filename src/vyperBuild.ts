@@ -57,8 +57,8 @@ export function vyperBuild(fileUri: vscode.Uri, vyperConfig: vscode.WorkspaceCon
 
 	running = true;
 
-	const pythonFromVirtualEnv = getVyperVirtualEnv() + '/bin/python';
-	const vyperExec = getVyperVirtualEnv() + '/bin/vyper';
+	const pythonFromVirtualEnv = getVyperVirtualEnv() + 'python';
+	const vyperExec = getVyperVirtualEnv() + 'vyper';
 
 	const index = fileUri.path.lastIndexOf("/") + 1;
 	const fileName = fileUri.path.substr(index);
